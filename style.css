@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.6;
+  letter-spacing: .1em;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+/* 共通のスタイル
+------------------------------------------------------------*/
+.container {
+  max-width: 70rem;
+  padding: 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .flex {
+    flex-direction: row;
+  }
+}
+.item div {
+  padding-left: 1rem;
+}
+.item .text {
+  margin-bottom: 0%;
+}
+
+@media only screen and (min-width: 768px) {
+  .item {
+    width: calc((100% - 1.25rem) / 2) ;
+  }
+
+  .item img {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/*
+------------------------------------------------------------*/
+.mv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+  color: #ffffff;
+  background-image: url("../images/雪山.jpeg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+
+
+.mv-title {
+  text-align: center;
+  margin: 0;
+  font-size: 22px;
+  font-weight: normal;
+}
+@media only screen and (min-width: 768px) {
+  .mv-title {
+    font-size: 57px;
+  }
+}
+
+
+.mv-name {
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .mv-name {
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 1.81em;
+    font-size: 36px;
+  }
+}
+
+.mv-text {
+  text-align: center;
+  font-size: 8px;
+}
+@media (min-width: 768px) {
+  .mv-text {
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1rem;
+    font-size: 21px;
+  }
+}
+.skills{
+  padding: 21px 1.25rem 3rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  color: #2f2f2f;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: 38px;
+  }
+}
+
+.skills ul{
+  text-align: center;
+  font-size: 18px;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .skills ul{
+    font-size: 1.4rem;
+  }
+}
+.skills p{
+  line-height: 30px;
+  margin-left: 0px;
+  margin-bottom: 21px;
+}
+/* works
+------------------------------------------------*/
+
+.works {
+  background-color: #dddddd;
+}
+.title {
+  padding-top: 1.5rem;
+}
+.item {
+  background-color: #fff;
+}
+.big{
+  font-size: 15px;
+}
+@media(min-width: 768px) {
+  .big {
+font-size: 19px;
+  }
+}
+
+.small {
+font-size: 12px;
+
+
+}
+@media(min-width: 768px) {
+  .small {
+    font-size: 15px;
+  }
+
+}
+.text-p{
+  line-height: 5px;
+}
+
+/* contact
+------------------------------------------------*/
+.contact {
+  text-align: center;
+}
+
+.daimei {
+  font-size: 20px;
+  margin-top: 21px;
+  text-align: center;
+
+}
+@media(min-width: 768px) {
+  .daimei {
+    font-size: 32px;
+  }
+
+}
+.sns {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+@media(min-width: 768px) {
+  .sns {
+    font-size: 20px;
+    margin-bottom: 0.3rem;
+  }
+}
+.sss {
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 27px;
+  margin-top: 0.3rem;
+}
+
+@media(min-width: 768px) {
+  .sss {
+    font-size: 20px;
+  }
+}
+
+.fab{
+  font-size: 20px;
+  text-align: center;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  line-height: 1rem;
+
+}
+
+@media(min-width: 768px) {
+  .fab {
+    font-size: 30px;
+    margin-top: 0.8rem;
+  }
+}
+/* 追加css */
+
+.cover-text {
+  margin: 0 auto;
+}
+/* フッター
+------------------------------------------------------------*/
+
+.footer {
+  padding: 1.3rem;
+  font-size: .875rem;
+  background-color: #6d6a6a;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+}
+@media(min-width: 768px) {
+  .footer small {
+    font-size: 20px;
+  }
+}
+.footer-copyright {
+  text-align: center;
+  color: #ffffff;
+}
